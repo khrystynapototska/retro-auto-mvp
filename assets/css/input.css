@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+  .dark :focus-visible { outline-color: #93c5fd; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+}
+
+@layer components {
+  .btn { @apply inline-flex min-h-12 items-center justify-center rounded-lg px-6 py-3 text-base font-semibold transition; }
+  .btn-primary { @apply btn bg-primary text-white hover:bg-primary-hover dark:bg-accent dark:text-slate-900 dark:hover:bg-accent-hover; }
+  .btn-outline { @apply btn border-2 border-primary text-primary hover:bg-primary/5 dark:border-accent dark:text-accent dark:hover:bg-white/5; }
+  .icon-btn { @apply inline-flex h-12 w-12 items-center justify-center rounded-lg border border-border text-primary hover:bg-surface-base dark:border-slate-700 dark:text-amber-200 dark:hover:bg-slate-800; }
+  .nav-link { @apply flex min-h-12 items-center border-b-2 border-transparent text-sm font-medium text-text hover:border-accent dark:text-slate-100; }
+  .nav-link-active { @apply border-primary font-semibold text-primary dark:border-accent dark:text-amber-200; }
+  .h-title { @apply font-heading font-bold text-primary dark:text-amber-200; }
+  .muted { @apply text-muted dark:text-slate-400; }
+  .card { @apply rounded-2xl border border-border bg-white shadow-card dark:border-slate-700 dark:bg-slate-900; }
+  .label { @apply mb-1 block text-sm font-medium; }
+  .err { @apply mt-1 text-sm text-red-700 dark:text-red-300; }
+  .check-row { @apply flex min-h-12 items-center gap-3 rounded-lg border border-border px-3 dark:border-slate-700; }
+  .chip { @apply inline-flex min-h-12 items-center rounded-full border-2 border-primary px-5 text-sm font-semibold text-primary dark:border-accent dark:text-accent; }
+  .chip[aria-pressed='true'] { @apply bg-primary text-white dark:bg-accent dark:text-slate-900; }
+
+  /* Поля форми: стани керуються атрибутами (aria-invalid / data-valid), тому темна тема їх не перекриває */
+  .field { @apply block min-h-12 w-full rounded-lg border-2 border-slate-400 bg-white px-3 py-2 text-base text-text dark:border-slate-500 dark:bg-slate-800 dark:text-slate-100; }
+  .field:focus-visible { @apply border-primary dark:border-accent; }
+  .field[data-valid='true'] { @apply border-green-700 dark:border-green-400; }
+  .field[aria-invalid='true'] { @apply border-red-600 dark:border-red-400; }
+}
+
+/* Swiper */
+.fleet-swiper { opacity: 0; transition: opacity 0.3s; }
+.fleet-swiper.swiper-initialized { opacity: 1; }
+.swiper-button-next, .swiper-button-prev { color: #fff; background: rgb(15 23 42 / 0.65); width: 48px; height: 48px; border-radius: 9999px; }
+.swiper-button-next::after, .swiper-button-prev::after { font-size: 18px; font-weight: 700; }
+/* Крапки пагінації: клікабельна зона 24x24 px (вимога touch target), візуально — 10 px */
+.swiper-pagination-bullet { width: 24px; height: 24px; margin: 0 !important; background: transparent !important; opacity: 1; position: relative; }
+.swiper-pagination-bullet::before { content: ''; position: absolute; inset: 7px; border-radius: 9999px; background: #94a3b8; }
+.swiper-pagination-bullet-active::before { background: #8a6b0f; }
+.dark .swiper-pagination-bullet-active::before { background: #c9a227; }
+
+/* Нижні секції рендеряться ліниво (продуктивність) */
+main > section:nth-of-type(n+4) { content-visibility: auto; contain-intrinsic-size: auto 600px; }

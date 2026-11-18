@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сторінку не знайдено | Ретро Авто</title>
+    <meta name="description" content="Такої сторінки немає. Поверніться на головну." />
+    <meta name="theme-color" content="#002147" />
+    <link rel="canonical" href="https://retro-auto.netlify.app/404.html" />
+    <!-- Open Graph / соцмережі -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:site_name" content="Ретро Авто" />
+    <meta property="og:title" content="Сторінку не знайдено | Ретро Авто" />
+    <meta property="og:description" content="Такої сторінки немає. Поверніться на головну." />
+    <meta property="og:url" content="https://retro-auto.netlify.app/404.html" />
+    <meta property="og:image" content="https://retro-auto.netlify.app/assets/images/hero-cabriolet.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="assets/images/logo-mark.png" />
+    <!-- Тема без «блимання»: застосовуємо збережений вибір до першого малювання -->
+    <script>(function(){try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.classList.toggle('dark',t==='dark')}catch(e){}})()</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="bg-surface font-sans text-text antialiased dark:bg-slate-950 dark:text-slate-100">
+    <a class="absolute -top-24 left-4 z-[200] rounded-lg bg-primary px-4 py-2 text-white focus:top-2" href="#main">Перейти до основного вмісту</a>
+    <header class="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">
+      <div class="mx-auto flex max-w-container flex-wrap items-center justify-between gap-x-4 px-4 py-3 md:px-8">
+        <a class="inline-flex min-h-12 items-center gap-2" href="index.html" aria-label="Ретро Авто — на головну">
+          <img class="h-9 w-9 dark:hidden" src="assets/images/logo-mark.png" alt="" width="36" height="35" />
+          <img class="hidden h-9 w-9 dark:block" src="assets/images/logo-mark-cream.png" alt="" width="36" height="35" />
+          <span class="flex flex-col leading-none">
+            <span class="text-xl font-semibold uppercase tracking-[0.06em] text-primary dark:text-amber-200">Ретро</span>
+            <span class="text-xs font-medium uppercase tracking-[0.3em] text-secondary dark:text-emerald-300">Авто</span>
+          </span>
+        </a>
+        <div class="flex items-center gap-2 lg:order-last">
+          <button id="themeToggle" type="button" class="icon-btn" aria-pressed="false" aria-label="Темна тема"><svg aria-hidden="true" class="h-5 w-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg><svg aria-hidden="true" class="hidden h-5 w-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+          <button id="menuToggle" type="button" class="icon-btn lg:hidden" aria-expanded="false" aria-controls="main-nav" aria-label="Меню">
+            <svg aria-hidden="true" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+        <nav id="main-nav" class="hidden w-full pb-3 lg:flex lg:w-auto lg:pb-0" aria-label="Головна навігація">
+          <ul class="flex flex-col divide-y divide-border dark:divide-slate-800 lg:flex-row lg:items-center lg:gap-6 lg:divide-y-0"><li><a href="index.html" class="nav-link">Головна</a></li><li><a href="fleet.html" class="nav-link">Автопарк</a></li><li><a href="calculator.html" class="nav-link">Калькулятор</a></li><li><a href="about.html" class="nav-link">Про нас</a></li><li><a href="contacts.html" class="nav-link">Контакти</a></li></ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1" class="focus:outline-none">
+      <section class="mx-auto max-w-container px-4 py-20 text-center md:px-8">
+        <h1 class="h-title text-5xl">404</h1>
+        <p class="muted mt-3 text-lg">Схоже, ця дорога нікуди не веде.</p>
+        <a class="btn-primary mt-6" href="index.html">На головну</a>
+      </section>
+    </main>
+
+    <footer class="mt-16 bg-primary text-cream dark:bg-slate-900">
+      <div class="mx-auto grid max-w-container gap-8 px-4 py-10 md:grid-cols-3 md:px-8">
+        <div>
+          <p class="font-heading text-2xl font-bold">Ретро Авто</p>
+          <p class="mt-2 text-sm text-cream/80">Оренда ретро-автомобілів для весіль, фотосесій і ділових подій у Львові.</p>
+        </div>
+        <nav aria-label="Навігація у футері"><ul class="space-y-1 text-sm"><li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline" href="index.html">Головна</a></li><li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline" href="fleet.html">Автопарк</a></li><li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline" href="calculator.html">Калькулятор</a></li><li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline" href="about.html">Про нас</a></li><li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline" href="contacts.html">Контакти</a></li></ul></nav>
+        <div class="text-sm">
+          <p><a class="inline-flex min-h-11 items-center font-semibold underline-offset-4 hover:underline" href="tel:+380320000000">+380&nbsp;32&nbsp;000&nbsp;00&nbsp;00</a></p>
+          <p class="text-cream/80">Щодня 9:00–21:00 · Львів</p>
+          <p class="mt-4 text-xs text-cream/70">© 2026 Ретро Авто. Навчальний проєкт: тарифи, відгуки та контакти демонстраційні.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/common.js" defer></script>
+  </body>
+</html>

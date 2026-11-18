@@ -1,0 +1,114 @@
+{
+  "cars": [
+    {
+      "id": "sl280",
+      "name": "Mercedes-Benz 280 SL",
+      "year": 1969,
+      "type": "Кабріолет",
+      "categories": [
+        "wedding",
+        "photo"
+      ],
+      "seats": 2,
+      "luggage": 1,
+      "gearbox": "АКП",
+      "rate": 3200,
+      "image": "assets/images/car-mercedes-280sl.webp",
+      "width": 1024,
+      "height": 768,
+      "alt": "Mercedes-Benz 280 SL 1969 року, червоний ретро-кабріолет біля цегляної стіни",
+      "description": "Легендарна «Пагода» з відкидним дахом — найчастіший вибір для весільного виїзду."
+    },
+    {
+      "id": "bel_air",
+      "name": "Chevrolet Bel Air",
+      "year": 1957,
+      "type": "Купе",
+      "categories": [
+        "photo",
+        "business"
+      ],
+      "seats": 4,
+      "luggage": 2,
+      "gearbox": "АКП",
+      "rate": 3600,
+      "image": "assets/images/car-chevrolet-bel-air.webp",
+      "width": 1024,
+      "height": 768,
+      "alt": "Chevrolet Bel Air 1957 року, бірюзовий кузов з білим дахом",
+      "description": "Американська класика з хромом і бірюзовим кузовом — ефектні кадри для фотосесії."
+    },
+    {
+      "id": "gaz21",
+      "name": "ГАЗ-21 «Волга»",
+      "year": 1963,
+      "type": "Седан",
+      "categories": [
+        "wedding",
+        "business"
+      ],
+      "seats": 4,
+      "luggage": 3,
+      "gearbox": "МКП",
+      "rate": 2450,
+      "image": "assets/images/car-gaz-21.webp",
+      "width": 1024,
+      "height": 768,
+      "alt": "ГАЗ-21 «Волга» світло-сірого кольору на лісовій дорозі",
+      "description": "Радянський седан для тих, хто хоче справжню атмосферу минулого: ідеальна для зустрічі гостей."
+    },
+    {
+      "id": "cabrio",
+      "name": "Класичний кабріолет",
+      "year": 1962,
+      "type": "Кабріолет",
+      "categories": [
+        "wedding"
+      ],
+      "seats": 4,
+      "luggage": 2,
+      "gearbox": "АКП",
+      "rate": 3900,
+      "image": "assets/images/hero-cabriolet.webp",
+      "width": 1344,
+      "height": 768,
+      "alt": "Темно-синій ретро-кабріолет із букетом білих троянд на тлі класичного особняка",
+      "description": "Темно-синій кабріолет для весільних кортежів: прикрашений квітами та стрічкою."
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "label": "Усі"
+    },
+    {
+      "id": "wedding",
+      "label": "Весілля"
+    },
+    {
+      "id": "photo",
+      "label": "Фотосесія"
+    },
+    {
+      "id": "business",
+      "label": "Ділова подія"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Олена К.",
+      "event": "Весілля",
+      "text": "Mercedes 280 SL приїхав вчасно, водій допоміг із фото. Усе пройшло бездоганно."
+    },
+    {
+      "author": "Андрій М.",
+      "event": "Фотосесія",
+      "text": "Брали Bel Air на дві години для зйомки. Зручно, що ціна одразу з усіма зборами — жодних сюрпризів."
+    },
+    {
+      "author": "Марта Л.",
+      "event": "Ділова подія",
+      "text": "Зустрічали партнерів на ГАЗ-21 — враження незабутнє, організація на високому рівні."
+    }
+  ]
+}
